@@ -1,9 +1,9 @@
-const helloWorldModule = require('../hello-world.js');
+const { someComplexFunction } = require('../challenge_one.js');
 describe('Test someComplexFunction', () => {
     test('Console log should have been called', () => {
       const logSpy = jest.spyOn(global.console, 'log');
 
-      helloWorldModule.someComplexFunction();
+      someComplexFunction();
 
       expect(logSpy).toHaveBeenCalled();
       expect(logSpy).toHaveBeenCalledTimes(1);
