@@ -1,0 +1,16 @@
+{
+  "name": "ipfs-upload-helper",
+  "version": "1.0.0",
+  "description": "helper project to upload files to IPFS",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node scripts/upload_to_ipfs.js"
+  },
+  "author": "Edgaras Valincius",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "ipfs-http-client": "60.0.0"
+  },
+  "type": "module"
+}
