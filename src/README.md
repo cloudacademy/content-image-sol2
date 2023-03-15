@@ -20,12 +20,25 @@ This tool is tuned to use Infura pinning service.
 - /nft_metadata
     - contains list of metadata JSON files that will be AUTO generated after each file in /nfts are uploaded.
 
+---
+## configure Environmental variables
+in the root directory create a new file and name it `.env`
+
+then add the following lines 
+
+```shell
+IPFS_UPLOAD_URL=http://127.0.0.1:5002
+IPFS_GATEWAY=http://127.0.0.1:9090/ipfs
+IPFS_PROVIDER_PROJECTID=
+IPFS_PROVIDER_PROJECTSECRET=
+IPFS_PROVIDER_TOKEN=
+```
 
 ---
 ## Run the Project
 
 To start the script: 
-    `npm run start`
+    `npm start`
 
 Example output:
  
