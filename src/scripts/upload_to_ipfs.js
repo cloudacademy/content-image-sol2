@@ -6,10 +6,12 @@ dotenv.config();
 
 const projectId = process.env.IPFS_PROVIDER_PROJECTID;
 const projectSecret = process.env.IPFS_PROVIDER_PROJECTSECRET;
+const ipfs_token = process.env.IPFS_PROVIDER_TOKEN;
+
 const ipfs_upload_url = process.env.IPFS_UPLOAD_URL;
 const ipfs_gateway = process.env.IPFS_GATEWAY;
 
-const auth = "Basic " + Buffer.from(projectId + ":" + projectSecret, "utf8").toString("base64");
+const auth = ipfs_token ? "Bearer " + ipfs_token : "Basic " + Buffer.from(projectId + ":" + projectSecret, "utf8").toString("base64");
 
 const client = create({
   url: ipfs_upload_url,
@@ -59,11 +61,6 @@ function createMetadataJSONForUploadedNFT(file, fileFolderCid) {
 
   // get file name without extension
   let nameOfFile = getFileName(file);
-  let cid = getFileCID(file);
-
-  console.log(fileFolderCid);
-  console.log(file);
-
   // Create JSON structure
   const data = JSON.stringify({
     "name": `NFT ${nameOfFile}`,
