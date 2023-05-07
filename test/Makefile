@@ -7,12 +7,10 @@ one:
 	(cd ../challenge/one/ && npx hardhat compile && npx hardhat test test_one.js)
 
 two:
-	mkdir -p ../challenge/two/
-	mkdir -p ../challenge/two/contracts
-	cp ../src/contracts/Variables.sol ../challenge/two/contracts/
-	cp ../src/hardhat.config.js ../challenge/two/
-	cp test_two.js ../challenge/two/
-	(cd ../challenge/two/ && npx hardhat compile && npx hardhat test test_two.js)
+	mkdir -p contracts
+	cp ../src/contracts/Variables.sol contracts/
+	ls 
+	npx hardhat compile && npx hardhat test test_two.js
 
 three:
 	mkdir -p ../challenge/three/
