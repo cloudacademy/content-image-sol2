@@ -17,7 +17,6 @@ two:
 	(cd ../challenge/two/ && npx hardhat test test_two.js)
 
 three:
-	one:
 	mkdir -p ../challenge/three/
 	cp ../src/challenge_one.js ../challenge/three/
 	npm i jest	
