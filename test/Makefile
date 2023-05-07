@@ -4,8 +4,7 @@ one:
 	cp ../src/contracts/Variables.sol ../challenge/one/contracts/
 	cp ../src/hardhat.config.js ../challenge/one/
 	cp test_one.js ../challenge/one/
-	(cd ../challenge/one/ && npx hardhat compile)
-	(cd ../challenge/one/ && npx hardhat test test_one.js)
+	(cd ../challenge/one/ && npx hardhat compile && npx hardhat test test_one.js)
 
 two:
 	mkdir -p ../challenge/two/
@@ -13,8 +12,7 @@ two:
 	cp ../src/contracts/Variables.sol ../challenge/two/contracts/
 	cp ../src/hardhat.config.js ../challenge/two/
 	cp test_two.js ../challenge/two/
-	(cd ../challenge/two/ && npx hardhat compile)
-	(cd ../challenge/two/ && npx hardhat test test_two.js)
+	(cd ../challenge/two/ && npx hardhat compile && npx hardhat test test_two.js)
 
 three:
 	mkdir -p ../challenge/three/
