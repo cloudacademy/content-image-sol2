@@ -12,7 +12,8 @@
   "author": "Edgaras Valincius",
   "license": "ISC",
   "dependencies": {
-    "hardhat": "^2.14.0"
+    "hardhat": "^2.14.0",
+    "jest": "^28.1.3"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^2.0.2"
