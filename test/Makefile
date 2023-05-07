@@ -10,7 +10,6 @@ two:
 	mkdir -p contracts
 	cp ../src/contracts/Variables.sol contracts/
 	npx hardhat test test_two.js
-	npx hardhat
 
 three:
 	mkdir -p ../challenge/three/
