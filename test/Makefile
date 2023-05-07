@@ -19,5 +19,4 @@ two:
 three:
 	mkdir -p ../challenge/three/
 	cp ../src/challenge_one.js ../challenge/three/
-	npm i jest	
 	npx jest
