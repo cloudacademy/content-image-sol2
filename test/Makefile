@@ -12,6 +12,18 @@ two:
 	npx hardhat test test_two.js
 
 three:
+	mkdir -p contracts
+	cp ../src/contracts/Variables.sol contracts/
+	npx hardhat test
+	ls
+
+four:
 	mkdir -p ../challenge/three/
 	cp ../src/challenge_one.js ../challenge/three/
 	npx jest
+
+five:
+	mkdir -p ../challenge/three/
+	cp ../src/challenge_one.js ../challenge/three/
+	npx jest
+	ls
